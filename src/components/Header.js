@@ -95,21 +95,21 @@ export default class Header extends React.Component {
                         <div className="col-5">
                             <div className="flex justify-content-evenly pr-6">
                                 <div className="mt-6">
-                                    <div className="mb-6">
+                                    <div className="mb-6 fadeinleft animation-duration-500 animation-ease-in-out">
                                         <div style={{color : "#e78733"}} className="text-7xl">5</div>
                                         <div className="font-bold text-1xl text-400">Projects completed</div>
                                     </div>
-                                    <div className="">
+                                    <div className="fadeinleft animation-duration-500 animation-ease-in-out">
                                     <div style={{color : "#f55739"}} className="text-7xl">4</div>
                                         <div className="font-bold text-1xl text-400">Worked in fortune</div>
                                     </div>
                                 </div>
                                 <div className="">
-                                    <div className="mb-6">
+                                    <div className="mb-6 fadeinright animation-duration-500 animation-ease-in-out">
                                     <div style={{color : "#1479cc"}} className="text-7xl">5 +</div>
                                         <div className="font-bold text-1xl text-400">Years experience</div>
                                     </div>
-                                    <div className="">
+                                    <div className="fadeinright animation-duration-500 animation-ease-in-out">
                                     <div style={{color : "#a75ff6"}} className="text-7xl">5</div>
                                         <div className="font-bold text-1xl text-400">Technologies worked</div>
                                     </div>
