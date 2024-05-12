@@ -42,7 +42,7 @@ export default class About extends React.Component {
                                 Euismod elementum nisi quis eleifend. Lacus viverra vitae congue eu consequat ac. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Semper risus in hendrerit gravida rutrum quisque non. At varius vel pharetra vel turpis nunc eget lorem. Mattis ullamcorper velit sed ullamcorper. Lobortis scelerisque fermentum dui faucibus in. Et tortor consequat id porta nibh venenatis cras.
                             </p>
                         </div>
-                        <Button label="Know more" size="large" className="font-bold pb-3 pl-5 pr-5 pt-3"/>
+                        <Button label="Let`s connect" size="large" className="font-bold pb-3 pl-5 pr-5 pt-3"/>
                     </div>
 
 
