@@ -12,7 +12,7 @@ export default class About extends React.Component {
         return (
             <div className="container-about mt-6 mb-6">
                 <div className="grid">
-                    <div className="col-5 col-offset-1 pl-8 pr-8 mt-6">
+                    <div className="col-5 col-offset-1 pl-8 pr-8 mt-6" style={{ height: "32rem" }}>
                         <div class="container border-round-3xl h-30rem">
                             <div class="align-content-evenly border-round-2xl flex flex-column glass-card h-30rem  mb-8">
                                 <img
@@ -33,13 +33,16 @@ export default class About extends React.Component {
                         <div class="circle1"></div>
                         <div class="circle2"></div>
                     </div>
-                    <div className="col-6">
-                        <div>Home</div>
-                        <div>About</div>
-                        <div>Skills</div>
-                        <div>Services</div>
-                        <div>Projects</div>
-                        <div>Contact</div>
+                    <div className="align-content-center col-5 text-left">
+                        <div className="font-bold text-700"><p className="text-4xl">ABOUT ME</p></div>
+                        <div>
+                            <p className="font-medium text-3xl text-700">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <p className="font-normal text-2xl text-700">
+                                Euismod elementum nisi quis eleifend. Lacus viverra vitae congue eu consequat ac. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Semper risus in hendrerit gravida rutrum quisque non. At varius vel pharetra vel turpis nunc eget lorem. Mattis ullamcorper velit sed ullamcorper. Lobortis scelerisque fermentum dui faucibus in. Et tortor consequat id porta nibh venenatis cras.
+                            </p>
+                        </div>
                     </div>
 
 
