@@ -106,11 +106,11 @@ export default class Header extends React.Component {
                                 </div>
                                 <div className="">
                                     <div className="mb-6 fadeinright animation-duration-500 animation-ease-in-out">
-                                    <div style={{color : "#1479cc"}} className="text-7xl">5 +</div>
+                                    <div style={{color : "#1479cc"}} className="text-7xl">5+</div>
                                         <div className="font-bold text-1xl text-400">Years experience</div>
                                     </div>
                                     <div className="fadeinright animation-duration-500 animation-ease-in-out">
-                                    <div style={{color : "#a75ff6"}} className="text-7xl">5</div>
+                                    <div style={{color : "#a75ff6"}} className="text-7xl">30+</div>
                                         <div className="font-bold text-1xl text-400">Technologies worked</div>
                                     </div>
                                 </div>
