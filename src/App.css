@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.underline-highlight-green{
+  border-bottom: 0.2rem solid #00800094
+}

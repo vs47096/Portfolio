@@ -2,8 +2,7 @@ import React from "react";
 import logoDark from '../assets/logo-for-dark.png';
 import avatar from '../assets/avatar.png';
 import './About.css';
-import { Card } from 'primereact/card';
-
+import { Button } from 'primereact/button';
 
 export default class About extends React.Component {
 
@@ -34,7 +33,7 @@ export default class About extends React.Component {
                         <div class="circle2"></div>
                     </div>
                     <div className="align-content-center col-5 text-left">
-                        <div className="font-bold text-700"><p className="text-4xl">ABOUT ME</p></div>
+                        <div className="font-bold text-700"><p className="text-4xl"><span className="underline-highlight-green">ABOUT ME</span></p></div>
                         <div>
                             <p className="font-medium text-3xl text-700">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -43,6 +42,7 @@ export default class About extends React.Component {
                                 Euismod elementum nisi quis eleifend. Lacus viverra vitae congue eu consequat ac. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Semper risus in hendrerit gravida rutrum quisque non. At varius vel pharetra vel turpis nunc eget lorem. Mattis ullamcorper velit sed ullamcorper. Lobortis scelerisque fermentum dui faucibus in. Et tortor consequat id porta nibh venenatis cras.
                             </p>
                         </div>
+                        <Button label="Know more" size="large" className="font-bold pb-3 pl-5 pr-5 pt-3"/>
                     </div>
 
 
