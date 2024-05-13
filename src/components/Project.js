@@ -79,7 +79,7 @@ export default class Project extends React.Component {
 
         return (
             <div className="h-screen" style={containerStyle}>
-                <div className="flex flex-column h-full justify-content-evenly p-8 pt-6">
+                <div className="flex flex-column h-full justify-content-evenly p-8 pt-8">
                     <div className="font-bold text-5xl text-left" style={{ color: "#00ca5a" }}>Projects</div>
                     <div className="font-medium text-600 text-xl text-left">
                         <p className="line-height-2 text-justify"
