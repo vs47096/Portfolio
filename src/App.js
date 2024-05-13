@@ -44,15 +44,15 @@ export default class App extends React.Component {
             </div>
           </div>
           <div>
-          <div className="font-bold text-700"><p className="text-2xl"><span className="underline-highlight-green">Vinamra Shrey</span></p></div>
+          <div className="font-bold text-700"><p className="text-2xl text-center"><span className="underline-highlight-green">Vinamra Shrey</span></p></div>
           <div>
-            <div className='flex justify-content-evenly'>
-              <div><img src={gmail} alt="logo" loading="lazy" className="h-2rem"/></div>
-              <div className='align-content-center font-medium text-2xl text-700'>vinasko@gmail.com</div>
+            <div className='grid'>
+              <div className='col-3 col-offset-1 pl-5'><img src={gmail} alt="logo" loading="lazy" className="h-2rem"/></div>
+              <div className='col-8 font-medium text-2xl text-700  align-content-center'>vinasko@gmail.com</div>
             </div>
-            <div className='flex justify-content-evenly mt-3 relative' style={{left : "-0.3rem"}}>
-            <div><img src={wp} alt="logo" loading="lazy" className="h-3rem"/></div>
-              <div className='align-content-center font-medium text-2xl text-700'>
+            <div className='grid mt-3'>
+            <div className='col-3 col-offset-1 pl-5'><img src={wp} alt="logo" loading="lazy" className="h-3rem"/></div>
+              <div className='col-8 font-medium text-2xl text-700 align-content-center'>
                 <span>+91-7004711510</span>
               </div>
             </div>

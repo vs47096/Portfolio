@@ -17,8 +17,7 @@ export default class Contact extends React.Component {
                             width: "40rem",
                             letterSpacing: "0.03rem"
                         }}>
-                        If you would like to talk to me, please send me a message.
-                        We can work together on a project and make something big.</div>
+                        Let's team up and build something great. Send me a message to get started.</div>
                     <Button label="Contact Me" size="large" className="font-bold pb-3 pl-5 pr-5 pt-3 w-fit"
                     onClick={(() => this.props.toggleDialog(true))} />
                 </div>

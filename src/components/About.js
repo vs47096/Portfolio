@@ -39,11 +39,9 @@ export default class About extends React.Component {
                     <div className="align-content-center col-5 text-left">
                         <div className="font-bold text-700"><p className="text-4xl"><span className="underline-highlight-green">ABOUT ME</span></p></div>
                         <div>
-                            <p className="font-medium text-2xl text-700">
-                                Hi! Combining my love for coding and globetrotting, I'm on a quest to debug the world, one destination at a time. Join me on this adventure as we code our way across the map!
-                            </p>
-                            <p className="font-medium text-xl text-700">
-                                In addition to my current profile, I try to keep learning new things and building projects. I am exploring machine learning and building projects in this domain. As an engineer, I am interested in knowing the end-to-end workings of systems, even at the network and security levels.
+                            <p className="font-medium mb-6 text-700 text-justify text-xl line-height-2"
+                                style={{letterSpacing: "0.05rem"}}>
+                            Hey there! I'm someone who finds joy in both coding and exploring the world. I'm on a quest to debug the world, one destination at a time. Alongside, I am committed to continuous learning, particularly in the realm of machine learning, where I actively engage in project development. As an engineer, I possess a comprehensive understanding of system architectures, delving into network and security aspects to ensure end-to-end functionality.
                             </p>
                         </div>
                         <Button label="Let`s connect" size="large" className="font-bold pb-3 pl-5 pr-5 pt-3"
