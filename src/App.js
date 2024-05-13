@@ -62,8 +62,8 @@ export default class App extends React.Component {
         <Header toggleDialog={this.toggleDialog}/>
         <About toggleDialog={this.toggleDialog}/>
         <Services />
-        <Skills />
-        <Project />
+        <Skills/>
+        <Project/>
         <Contact toggleDialog={this.toggleDialog}/>
         <Footer />
       </div>

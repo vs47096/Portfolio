@@ -13,7 +13,7 @@ export default class About extends React.Component {
     render() {
 
         return (
-            <div className="container-about mt-6 mb-6">
+            <div id="about" className="container-about mt-6 mb-6">
                 <div className="grid">
                     <div className="col-5 col-offset-1 pl-8 pr-8 mt-6" style={{ height: "32rem" }}>
                         <div className="container border-round-3xl h-30rem">
@@ -39,10 +39,10 @@ export default class About extends React.Component {
                     <div className="align-content-center col-5 text-left">
                         <div className="font-bold text-700"><p className="text-4xl"><span className="underline-highlight-green">ABOUT ME</span></p></div>
                         <div>
-                            <p className="font-medium text-3xl text-700">
+                            <p className="font-medium text-2xl text-700">
                                 Hi! Combining my love for coding and globetrotting, I'm on a quest to debug the world, one destination at a time. Join me on this adventure as we code our way across the map!
                             </p>
-                            <p className="font-normal text-2xl text-700">
+                            <p className="font-medium text-xl text-700">
                                 In addition to my current profile, I try to keep learning new things and building projects. I am exploring machine learning and building projects in this domain. As an engineer, I am interested in knowing the end-to-end workings of systems, even at the network and security levels.
                             </p>
                         </div>

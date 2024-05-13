@@ -3,6 +3,7 @@ import { Button } from 'primereact/button';
 import LazyLoad from 'react-lazyload';
 import background from '../assets/background.jpg';
 import logoDark from '../assets/logo-for-dark.png';
+import { Link } from "react-router-dom";
 
 export default class Header extends React.Component {
     constructor(props) {
@@ -69,12 +70,11 @@ export default class Header extends React.Component {
                             />
                         </div>
                         <div className="col flex justify-content-around text-500 text-lg pr-8" style={{ letterSpacing: "0.05em", fontWeight: "500" }}>
-                            <div style={{ color: '#04d15b' }} className="mr-2">Home</div>
-                            <div className="mr-2">About</div>
-                            <div className="mr-2">Skills</div>
-                            <div className="mr-2">Services</div>
-                            <div className="mr-2">Projects</div>
-                            <div>Contact</div>
+                            <div style={{ color: '#04d15b' }} className="mr-2 cursor-pointer">Home</div>
+                            <a href="#about" style={{textDecoration: "none", color: "inherit"}}><div className="mr-2 cursor-pointer">About</div></a>
+                            <a href="#services" style={{textDecoration: "none", color: "inherit"}}><div className="mr-2 cursor-pointer">Services</div></a>
+                            <a href="#skills" style={{textDecoration: "none", color: "inherit"}}><div className="mr-2 cursor-pointer">Skills</div></a>
+                            <a href="#projects" style={{textDecoration: "none", color: "inherit"}}><div className="mr-2 cursor-pointer">Projects</div></a>
                         </div>
                     </div>
                     <div className="align-content-evenly flex grid h-full pb-8">
