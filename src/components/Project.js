@@ -62,18 +62,18 @@ export default class Project extends React.Component {
         ];
 
         const containerStyle = {
-            background: 'rgb(77,74,108)',
-            background: '-moz-linear-gradient(0deg, rgba(77,74,108,1) 0%, rgba(115,3,192,1) 22%, rgba(230,106,197,1) 41%, rgba(253,239,249,1) 68%, rgba(255,255,255,1) 100%)',
-            background: '-webkit-linear-gradient(0deg, rgba(77,74,108,1) 0%, rgba(115,3,192,1) 22%, rgba(230,106,197,1) 41%, rgba(253,239,249,1) 68%, rgba(255,255,255,1) 100%)',
-            background: 'linear-gradient(0deg, rgba(77,74,108,1) 0%, rgba(115,3,192,1) 22%, rgba(230,106,197,1) 41%, rgba(253,239,249,1) 68%, rgba(255,255,255,1) 100%)',
-            filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr="#4d4a6c",endColorstr="#ffffff",GradientType=1)'
+            // background: 'rgb(77,74,108)',
+            // background: '-moz-linear-gradient(0deg, rgba(77,74,108,1) 0%, rgba(115,3,192,1) 22%, rgba(230,106,197,1) 41%, rgba(253,239,249,1) 68%, rgba(255,255,255,1) 100%)',
+            // background: '-webkit-linear-gradient(0deg, rgba(77,74,108,1) 0%, rgba(115,3,192,1) 22%, rgba(230,106,197,1) 41%, rgba(253,239,249,1) 68%, rgba(255,255,255,1) 100%)',
+            // background: 'linear-gradient(0deg, rgba(77,74,108,1) 0%, rgba(115,3,192,1) 22%, rgba(230,106,197,1) 41%, rgba(253,239,249,1) 68%, rgba(255,255,255,1) 100%)',
+            // filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr="#4d4a6c",endColorstr="#ffffff",GradientType=1)'
         };
 
 
 
         return (
             <div className="h-screen" style={containerStyle}>
-                <div className="flex flex-column h-full justify-content-evenly p-8 pt-5">
+                <div className="flex flex-column h-full justify-content-evenly p-8 pt-8">
                     <div className="font-bold text-5xl text-left" style={{ color: "#00ca5a" }}>Projects</div>
                     <div className="font-medium text-600 text-xl text-left">
                         <p className="line-height-2 text-justify"
