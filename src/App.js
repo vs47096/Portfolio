@@ -8,6 +8,7 @@ import "primereact/resources/themes/saga-blue/theme.css";
 import Skills from './components/Skills';
 import Services from './components/Services';
 import Project from './components/Project';
+import Contact from './components/Contact';
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
 </style>
@@ -19,7 +20,8 @@ function App() {
       <About />
       <Skills />
       <Services /> */}
-      <Project />
+      {/* <Project /> */}
+      <Contact />
     </div>
   );
 }
