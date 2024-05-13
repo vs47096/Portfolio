@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from 'primereact/button';
-import logo from '../assets/logo.png';
 
 export default class Contact extends React.Component {
 

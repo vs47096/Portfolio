@@ -37,4 +37,13 @@ export const projects = [{
     "name" : "test name 2",
     "description" : "description 2",
     "link" : "https://react.dev"
-},]
+}]
+
+export const attributionList = [<a href="https://storyset.com/technology">Technology illustrations by Storyset</a>,
+<a href="https://storyset.com/web">Web illustrations by Storyset</a>,
+<a href="https://storyset.com/web">Web illustrations by Storyset</a>,
+<a href="https://www.freepik.com/free-vector/business-man-working-hard-stock-financial-trade-market-diagram-vector-illustration-flat-design_13399753.htm#fromView=search&page=1&position=15&uuid=36f40477-425a-498e-b51f-5dbca3b5cf68">Image by jcomp on Freepik</a>,
+<a href="https://storyset.com/app">App illustrations by Storyset</a>,
+<a href="https://www.freepik.com/free-vector/flat-design-web-developers_12064750.htm#fromView=search&page=1&position=35&uuid=36f40477-425a-498e-b51f-5dbca3b5cf68">Image by freepik</a>,
+<a href="https://www.freepik.com/free-vector/big-data-storage-abstract-concept-illustration_12291144.htm#fromView=search&page=1&position=6&uuid=d2db492e-f2f8-4bc8-8112-d6f2b777d37f">Image by vectorjuice on Freepik</a>
+]

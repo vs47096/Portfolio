@@ -9,8 +9,9 @@ import Skills from './components/Skills';
 import Services from './components/Services';
 import Project from './components/Project';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
 </style>
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Services /> */}
       {/* <Project /> */}
       <Contact />
+      <Footer />
     </div>
   );
 }
