@@ -13,7 +13,7 @@ export default class About extends React.Component {
                 <div className="grid">
                     <div className="col-5 col-offset-1 pl-8 pr-8 mt-6" style={{ height: "32rem" }}>
                         <div class="container border-round-3xl h-30rem">
-                            <div class="align-content-evenly border-round-2xl flex flex-column glass-card h-30rem  mb-8">
+                            <div class="align-content-evenly border-round-2xl flex flex-column glass-card h-30rem  mb-8 shadow-5">
                                 <img
                                     src={avatar}
                                     alt="logo"

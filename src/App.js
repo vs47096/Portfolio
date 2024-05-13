@@ -6,6 +6,7 @@ import "../node_modules/primeflex/primeflex.css";
 import "primereact/resources/primereact.min.css";
 import "primereact/resources/themes/saga-blue/theme.css";
 import Skills from './components/Skills';
+import Services from './components/Services';
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
 </style>
@@ -16,6 +17,7 @@ function App() {
       <Header />
       <About />
       <Skills />
+      <Services />
     </div>
   );
 }

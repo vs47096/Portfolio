@@ -19,7 +19,6 @@ export default class Skills extends React.Component {
     }
 
     render() {
-        console.log(this.state.techImages)
         return (
             <div className="container-skills pb-6 pt-6" style={{ backgroundColor: "#2d333b" }}>
                 <div className="font-bold text-5xl text-center" style={{ color: "#00ca5a" }}>Technologies used</div>
@@ -27,7 +26,7 @@ export default class Skills extends React.Component {
                     {this.state.techImages?.map((image, index) => {
                         const match = image.match(/\/media\/([^\.]+)/);
                         return (
-                            <div className="">
+                            <div className="fadeinleft animation-duration-500 animation-ease-in-out">
                                 <img className="h-5rem"
                                     key={index} src={image} alt="info"
                                     title={match ? match[1] : null}
