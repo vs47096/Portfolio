@@ -90,17 +90,18 @@ export default class Header extends React.Component {
                                     WebkitTextFillColor: 'transparent'
                                 }}>Applications.</span></div>
                             </p>
-                            <Button label="Contact Me" size="large" className="font-bold pb-3 pl-5 pr-5 pt-3"/>
+                            <Button label="Contact Me" size="large" className="font-bold pb-3 pl-5 pr-5 pt-3"
+                                onClick={(() => this.props.toggleDialog(true))}/>
                         </div>
                         <div className="col-5">
                             <div className="flex justify-content-evenly pr-6">
                                 <div className="mt-6">
                                     <div className="mb-6 fadeinleft animation-duration-500 animation-ease-in-out">
-                                        <div style={{color : "#e78733"}} className="text-7xl">5</div>
+                                        <div style={{color : "#e78733"}} className="text-7xl">25+</div>
                                         <div className="font-bold text-1xl text-400">Projects completed</div>
                                     </div>
                                     <div className="fadeinleft animation-duration-500 animation-ease-in-out">
-                                    <div style={{color : "#f55739"}} className="text-7xl">4</div>
+                                    <div style={{color : "#f55739"}} className="text-7xl">5</div>
                                         <div className="font-bold text-1xl text-400">Worked in fortune</div>
                                     </div>
                                 </div>
