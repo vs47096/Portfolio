@@ -6,6 +6,10 @@ import { Button } from 'primereact/button';
 
 export default class About extends React.Component {
 
+    constructor(props){
+        super(props);
+    }
+
     render() {
 
         return (
@@ -36,13 +40,14 @@ export default class About extends React.Component {
                         <div className="font-bold text-700"><p className="text-4xl"><span className="underline-highlight-green">ABOUT ME</span></p></div>
                         <div>
                             <p className="font-medium text-3xl text-700">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Hi! I`m a full-stack developer with 5+ years of industry experience (excluding training and internships). I have completed 25+ projects (including enterprise and personal). 
                             </p>
                             <p className="font-normal text-2xl text-700">
-                                Euismod elementum nisi quis eleifend. Lacus viverra vitae congue eu consequat ac. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Semper risus in hendrerit gravida rutrum quisque non. At varius vel pharetra vel turpis nunc eget lorem. Mattis ullamcorper velit sed ullamcorper. Lobortis scelerisque fermentum dui faucibus in. Et tortor consequat id porta nibh venenatis cras.
+                                In addition to my current profile, I try to keep learning new things and build projects. I am exploring machine learning and building projects in this domain. As an engineer, I am interested to knowing end-to-end working of systems, even at network and security level.
                             </p>
                         </div>
-                        <Button label="Let`s connect" size="large" className="font-bold pb-3 pl-5 pr-5 pt-3"/>
+                        <Button label="Let`s connect" size="large" className="font-bold pb-3 pl-5 pr-5 pt-3"
+                        onClick={(() => this.props.toggleDialog(true))}/>
                     </div>
 
 
