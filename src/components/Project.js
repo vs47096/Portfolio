@@ -90,7 +90,6 @@ export default class Project extends React.Component {
                     <Carousel value={projects} numVisible={3} numScroll={3} responsiveOptions={responsiveOptions}
                         className="custom-carousel mt-3"
                         circular
-                        autoplayInterval={3000}
                         itemTemplate={this.projectTemplate} />
                 </div>
             </div>
