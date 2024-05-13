@@ -26,12 +26,12 @@ export default class Skills extends React.Component {
                     {this.state.techImages?.map((image, index) => {
                         const match = image.match(/\/media\/([^\.]+)/);
                         return (
-                            <div className="fadeinleft animation-duration-500 animation-ease-in-out">
+                            <div key={"skill-body-"+index} className="fadeinleft animation-duration-500 animation-ease-in-out">
                                 <img className="h-5rem"
-                                    key={index} src={image} alt="info"
+                                    key={"skill-image-"+index} src={image} alt="info"
                                     title={match ? match[1] : null}
                                     loading="lazy" />
-                                <div className="capitalize font-bold mt-3 text-200 text-sm" style={{
+                                <div key={"skill-name-"+index} className="capitalize font-bold mt-3 text-200 text-sm" style={{
                                     letterSpacing: "0.08rem"
                                 }}>{match ? match[1]?.replaceAll("-", " ") : null}</div>
                             </div>

@@ -46,20 +46,18 @@ export default class Services extends React.Component {
                 <div className="flex flex-wrap gap-5 justify-content-evenly mt-6 pl-8 pr-8">
                     {this.state.techImages?.map((image, index) => {
                         const match = image.match(/\/media\/([^\.]+)/);
-                        console.log(image);
-                        console.log(match ? match[1]?.replaceAll("-", " ") : null);
                         return (
                             
-                            <div className="mt-3 w-25rem">
+                            <div className="mt-3 w-25rem" key={"service-body-"+index}>
                                 <img className="h-11rem"
-                                    key={index} src={image} alt="info"
+                                    key={"service-image-"+index} src={image} alt="info"
                                     title={match ? match[1] : null}
                                     loading="lazy" />
-                                <div className="align-content-evenly capitalize font-bold h-3rem m-auto mt-3 text-2xl w-16rem" style={{
+                                <div key={"service-heading-"+index} className="align-content-evenly capitalize font-bold h-3rem m-auto mt-3 text-2xl w-16rem" style={{
                                     letterSpacing: "0.1rem",
                                     color: "#00ca5a"
                                 }}>{match ? match[1]?.replaceAll("-", " ") : null}</div>
-                                <div className="line-height-3 m-auto mt-5 text-600 text-center w-18rem" style={{fontSize : "medium"}}>
+                                <div key={"service-desc-"+index} className="line-height-3 m-auto mt-5 text-600 text-center w-18rem" style={{fontSize : "medium"}}>
                                 {this.getServiceDescription(match ? match[1]?.replaceAll("-", " ") : null)}
                                 </div>
                             </div>
