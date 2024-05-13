@@ -81,8 +81,8 @@ export default class Header extends React.Component {
                         <div className="col-6 col-offset-1 text-left">
                             <p style={{ fontFamily: "'Dosis', sans-serif" }} className="line-height-2 mb-8">
                                 <div className="mb-2 text-6xl text-color-secondary">Great ideas doesn't</div>
-                                <div className="font-semibold text-100 text-7xl">need approvals, they</div>
-                                <div className="font-semibold text-100 text-7xl">need <span style={{
+                                <div className="font-semibold text-100 text-7xl">Need approvals, they</div>
+                                <div className="font-semibold text-100 text-7xl">Need <span style={{
                                     background: '#11998e',  /* fallback for old browsers */
                                     background: '-webkit-linear-gradient(to right, #38ef7d, #11998e)',  /* Chrome 10-25, Safari 5.1-6 */
                                     background: 'linear-gradient(to right, #38ef7d, #11998e)', /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -98,21 +98,21 @@ export default class Header extends React.Component {
                                 <div className="mt-6">
                                     <div className="mb-6 fadeinleft animation-duration-500 animation-ease-in-out">
                                         <div style={{color : "#e78733"}} className="text-7xl">25+</div>
-                                        <div className="font-bold text-1xl text-400">Projects completed</div>
+                                        <div className="font-bold text-1xl text-400">Projects Completed</div>
                                     </div>
                                     <div className="fadeinleft animation-duration-500 animation-ease-in-out">
                                     <div style={{color : "#f55739"}} className="text-7xl">5</div>
-                                        <div className="font-bold text-1xl text-400">Worked in fortune</div>
+                                        <div className="font-bold text-1xl text-400">Worked in Fortune</div>
                                     </div>
                                 </div>
                                 <div className="">
                                     <div className="mb-6 fadeinright animation-duration-500 animation-ease-in-out">
                                     <div style={{color : "#1479cc"}} className="text-7xl">5+</div>
-                                        <div className="font-bold text-1xl text-400">Years experience</div>
+                                        <div className="font-bold text-1xl text-400">Years Experience</div>
                                     </div>
                                     <div className="fadeinright animation-duration-500 animation-ease-in-out">
                                     <div style={{color : "#a75ff6"}} className="text-7xl">30+</div>
-                                        <div className="font-bold text-1xl text-400">Technologies worked</div>
+                                        <div className="font-bold text-1xl text-400">Technologies Worked</div>
                                     </div>
                                 </div>
                             </div>
