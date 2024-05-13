@@ -9,3 +9,18 @@ export const serviceDescription = {
     "solutions" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
     "desktop" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
 }
+
+export const projects = [{
+    "image" : "p1.jpg",
+    "type" : "test type",
+    "name" : "test name",
+    "description" : "description",
+    "link" : "https://react.dev"
+},
+{
+    "image" : "p2.jpg",
+    "type" : "test type 2",
+    "name" : "test name 2",
+    "description" : "description 2",
+    "link" : "https://react.dev"
+}]

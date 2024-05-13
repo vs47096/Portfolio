@@ -7,6 +7,7 @@ import "primereact/resources/primereact.min.css";
 import "primereact/resources/themes/saga-blue/theme.css";
 import Skills from './components/Skills';
 import Services from './components/Services';
+import Project from './components/Project';
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
 </style>
@@ -14,10 +15,11 @@ import Services from './components/Services';
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header />
       <About />
       <Skills />
-      <Services />
+      <Services /> */}
+      <Project />
     </div>
   );
 }
