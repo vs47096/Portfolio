@@ -3,11 +3,12 @@ export const attributionBackground = <a href="https://www.freepik.com/free-vecto
 export const attributionBackgroundWithTelescope = <a href="https://www.freepik.com/free-vector/telescope-science-discovery-watching-stars-planets-outer-space_12620551.htm#from_view=detail_alsolike">Image by upklyak on Freepik</a>;
 
 export const serviceDescription = {
-    "mobile" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-    "web" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-    "machine" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-    "solutions" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-    "desktop" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+    "mobile" : "Build mobile application using native technology like java or cross-platform tech like React Native",
+    "web" : "Build web app end-to-end from DB, backend to frontend along with in-house or cloud deployment with CI/CD setup",
+    "machine" : "Create model to make predictions based on input dataset using various algroithms",
+    "solutions" : "Brainstorm to create system architecture to provide a solution for a problem",
+    "desktop" : "Create a simple desktop application with minimal maintenance for simpler requirements",
+    "iot" : "Build IoT system from circuit to code implementation for connecting device to the internet"
 }
 
 export const projects = [{
