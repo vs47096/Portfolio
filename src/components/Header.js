@@ -80,8 +80,8 @@ export default class Header extends React.Component {
                     <div className="align-content-evenly flex grid h-full pb-8">
                         <div className="col-6 col-offset-1 text-left">
                             <p style={{ fontFamily: "'Dosis', sans-serif" }} className="line-height-2 mb-8">
-                                <div className="mb-2 text-6xl text-color-secondary">Great ideas doesn't</div>
-                                <div className="font-semibold text-100 text-7xl">Need approvals, they</div>
+                                <div className="mb-2 text-6xl text-color-secondary">Great Ideas Doesn't</div>
+                                <div className="font-semibold text-100 text-7xl">Need Approvals, They</div>
                                 <div className="font-semibold text-100 text-7xl">Need <span style={{
                                     background: '#11998e',  /* fallback for old browsers */
                                     background: '-webkit-linear-gradient(to right, #38ef7d, #11998e)',  /* Chrome 10-25, Safari 5.1-6 */
