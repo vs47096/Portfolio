@@ -3,6 +3,10 @@ import { Button } from 'primereact/button';
 
 export default class Contact extends React.Component {
 
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return (
             <div className="align-content-center h-25rem">
@@ -15,7 +19,8 @@ export default class Contact extends React.Component {
                         }}>
                         If you would like to talk to me, please send me a message.
                         We can work together on a project and make something big.</div>
-                    <Button label="Contact Me" size="large" className="font-bold pb-3 pl-5 pr-5 pt-3 w-fit" />
+                    <Button label="Contact Me" size="large" className="font-bold pb-3 pl-5 pr-5 pt-3 w-fit"
+                    onClick={(() => this.props.toggleDialog(true))} />
                 </div>
             </div>
         );
