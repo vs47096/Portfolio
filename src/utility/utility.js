@@ -23,4 +23,18 @@ export const projects = [{
     "name" : "test name 2",
     "description" : "description 2",
     "link" : "https://react.dev"
-}]
+},
+{
+    "image" : "p1.jpg",
+    "type" : "test type",
+    "name" : "test name",
+    "description" : "description",
+    "link" : "https://react.dev"
+},
+{
+    "image" : "p2.jpg",
+    "type" : "test type 2",
+    "name" : "test name 2",
+    "description" : "description 2",
+    "link" : "https://react.dev"
+},]
