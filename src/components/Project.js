@@ -84,7 +84,7 @@ export default class Project extends React.Component {
                     <div className="font-medium text-600 text-xl text-left">
                         <p className="line-height-2 text-justify"
                             style={{ letterSpacing: "0.04rem" }}>
-                            Here are some projects I have worked on, alongside various enterprise and personal endeavours. They're mostly hosted on my home server to keep costs low.</p>
+                            Here are some projects I have worked on, alongside various enterprise and personal endeavours. They are mostly hosted on my home server to keep costs low.</p>
                     </div>
                     <Carousel value={projects} numVisible={3} numScroll={3} responsiveOptions={responsiveOptions}
                         className="custom-carousel mt-3"

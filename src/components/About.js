@@ -41,7 +41,7 @@ export default class About extends React.Component {
                         <div>
                             <p className="font-medium mb-6 text-700 text-justify text-xl line-height-2"
                                 style={{letterSpacing: "0.05rem"}}>
-                            Hey there! I'm someone who finds joy in both coding and exploring the world. I'm on a quest to debug the world, one destination at a time. Alongside, I am committed to continuous learning, particularly in the realm of machine learning, where I actively engage in project development. As an engineer, I possess a comprehensive understanding of system architectures, delving into network and security aspects to ensure end-to-end functionality.
+                            Hey there! I'm someone who finds joy in both Coding and Exploring the world. I'm on a quest to debug the world, one destination at a time. Alongside, I am committed to continuous learning, particularly in the realm of Machine learning, where I actively engage in project development. As an Engineer, I possess a comprehensive understanding of System Architectures, delving into Network and Security aspects to ensure end-to-end functionality.
                             </p>
                         </div>
                         <Button label="Let`s connect" size="large" className="font-bold pb-3 pl-5 pr-5 pt-3"
