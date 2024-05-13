@@ -52,7 +52,9 @@ export default class App extends React.Component {
             </div>
             <div className='flex justify-content-evenly mt-3 relative' style={{left : "-0.3rem"}}>
             <div><img src={wp} alt="logo" loading="lazy" className="h-3rem"/></div>
-              <div className='align-content-center font-medium text-2xl text-700'>+91-9461047096</div>
+              <div className='align-content-center font-medium text-2xl text-700'>
+                <span>+91-7004711510</span>
+              </div>
             </div>
           </div>
           </div>

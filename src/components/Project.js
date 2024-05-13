@@ -2,6 +2,7 @@ import React from "react";
 import { projects } from "../utility/utility";
 import { Card } from 'primereact/card';
 import { Carousel } from 'primereact/carousel';
+import { Button } from 'primereact/button';
 
 export default class Project extends React.Component {
 
@@ -15,8 +16,8 @@ export default class Project extends React.Component {
                         src={require(`../assets/project/${project.image}`)} alt="Project Images"
                         loading="lazy" />
                 }
-                className="p-card p-component w-fit shadow-5 border-round-bottom-md mb-6 ml-2"
-                style={{ height: "31rem" }}>
+                className="p-card p-component w-fit shadow-5 border-round-bottom-md mb-6 ml-2 mt-4"
+                style={{ height: "33rem" }}>
                 <div className="flex flex-column gap-2 pl-2 pr-2 text-left">
                     <div className="font-medium text-600 text-xl">
                         {project.type}
@@ -24,13 +25,18 @@ export default class Project extends React.Component {
                     <div className="capitalize font-bold text-3xl">
                         {project.name}
                     </div>
-                    <p className="text-600 h-3rem">
+                    <p className="text-600 h-4rem w-20rem">
                         {project.description}
                     </p>
-                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="font-bold p-button pb-3 pt-3 w-fit"
+                    {
+                        project.link ? 
+                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="font-bold p-button pb-3 pt-3 w-fit"
                         style={{ textDecoration: "none" }}>
                         Explore more
-                    </a>
+                    </a>:
+                    <Button label="No preview available" disabled severity="secondary" className="font-bold pb-3 pt-3 w-fit"/>
+                    }
+                    
                 </div>
             </Card>
         );
@@ -73,7 +79,7 @@ export default class Project extends React.Component {
 
         return (
             <div className="h-screen" style={containerStyle}>
-                <div className="flex flex-column h-full justify-content-evenly p-8 pt-8">
+                <div className="flex flex-column h-full justify-content-evenly p-8 pt-6">
                     <div className="font-bold text-5xl text-left" style={{ color: "#00ca5a" }}>Projects</div>
                     <div className="font-medium text-600 text-xl text-left">
                         <p className="line-height-2 text-justify"
