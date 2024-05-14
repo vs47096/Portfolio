@@ -50,12 +50,12 @@ export default class App extends React.Component {
               <div className='col-3 col-offset-1 pl-5'><img src={gmail} alt="logo" loading="lazy" className="h-2rem"/></div>
               <div className='col-8 font-medium text-2xl text-700  align-content-center'>vinasko@gmail.com</div>
             </div>
-            <div className='grid mt-3'>
+            {/* <div className='grid mt-3'>
             <div className='col-3 col-offset-1 pl-5'><img src={wp} alt="logo" loading="lazy" className="h-3rem"/></div>
               <div className='col-8 font-medium text-2xl text-700 align-content-center'>
                 <span>+91-7004711510</span>
               </div>
-            </div>
+            </div> */}
           </div>
           </div>
         </Dialog>
