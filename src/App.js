@@ -47,8 +47,8 @@ export default class App extends React.Component {
           <div className="font-bold text-700"><p className="text-2xl text-center"><span className="underline-highlight-green">Vinamra Shrey</span></p></div>
           <div>
             <div className='grid'>
-              <div className='col-3 col-offset-1 pl-5'><img src={gmail} alt="logo" loading="lazy" className="h-2rem"/></div>
-              <div className='col-8 font-medium text-2xl text-700  align-content-center'>vs47096.affiliate@gmail.com</div>
+              <div className='col-2 col-offset-1 pl-2'><img src={gmail} alt="logo" loading="lazy" className="h-2rem"/></div>
+              <div className='col-9 font-medium text-xl text-700  align-content-center'>vs47096.affiliate@gmail.com</div>
             </div>
             {/* <div className='grid mt-3'>
             <div className='col-3 col-offset-1 pl-5'><img src={wp} alt="logo" loading="lazy" className="h-3rem"/></div>
