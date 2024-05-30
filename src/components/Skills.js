@@ -22,7 +22,7 @@ export default class Skills extends React.Component {
         return (
             <div id="skills" className="container-skills pb-6 pt-6" style={{ backgroundColor: "#2d333b" }}>
                 <div className="font-bold md:text-5xl text-2xl text-center" style={{ color: "#00ca5a" }}>Technologies used</div>
-                <div className="flex flex-wrap gap-4 justify-content-evenly md:gap-5 md:mt-6 md:pl-8 md:pr-8 mt-5 pl-3 pr-3">
+                <div className="flex flex-wrap gap-4 justify-content-evenly md:gap-5 md:mt-6 md:pl-8 md:pr-8 mt-6 pl-3 pr-3">
                     {this.state.techImages?.map((image, index) => {
                         const match = image.match(/\/media\/([^\.]+)/);
                         return (

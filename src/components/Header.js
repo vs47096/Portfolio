@@ -40,20 +40,21 @@ export default class Header extends React.Component {
         };
 
         return (
-            <div className="container-header h-screen" style={containerStyle}>
+            <div className="container-header h-30rem md:h-screen" style={containerStyle}>
                 {/* Background image lazy loaded with a fade-in effect */}
                 <LazyLoad height="100%">
                     <img
                         src={background}
                         alt="background"
                         style={{
-                            width: '100%',
-                            height: '100%',
+                            // width: '100%',
+                            // height: '100%',
                             objectFit: 'cover',
                             transition: 'opacity 0.5s ease', // Smooth transition for the image
                             opacity: this.state.isImageLoaded ? 1 : 0, // Fade in the image when loaded
                         }}
                         onLoad={this.handleImageLoad}
+                        className="md:w-full h-full"
                     />
                 </LazyLoad>
                 {/* Black fade overlay */}
@@ -69,7 +70,7 @@ export default class Header extends React.Component {
                                 className="h-5rem"
                             />
                         </div>
-                        <div className="col flex justify-content-around text-500 text-lg pr-8" style={{ letterSpacing: "0.05em", fontWeight: "500" }}>
+                        <div className="col md:flex justify-content-around text-500 text-lg pr-8 hidden md:block" style={{ letterSpacing: "0.05em", fontWeight: "500" }}>
                             <div style={{ color: '#04d15b' }} className="mr-2 cursor-pointer">Home</div>
                             <a href="#about" style={{textDecoration: "none", color: "inherit"}}><div className="mr-2 cursor-pointer">About</div></a>
                             <a href="#services" style={{textDecoration: "none", color: "inherit"}}><div className="mr-2 cursor-pointer">Services</div></a>
@@ -77,8 +78,8 @@ export default class Header extends React.Component {
                             <a href="#projects" style={{textDecoration: "none", color: "inherit"}}><div className="mr-2 cursor-pointer">Projects</div></a>
                         </div>
                     </div>
-                    <div className="align-content-evenly flex grid h-full pb-8">
-                        <div className="col-6 col-offset-1 text-left">
+                    <div className="align-content-evenly flex grid md:h-full md:pb-8 mt-4 md:mt-0">
+                        <div className="col-6 col-offset-1 hidden md:block text-left">
                             <p style={{ fontFamily: "'Dosis', sans-serif" }} className="line-height-2 mb-8">
                                 <div className="mb-2 text-6xl text-color-secondary">Great Ideas Doesn't</div>
                                 <div className="font-semibold text-100 text-7xl">Need Approvals, They</div>
@@ -93,8 +94,8 @@ export default class Header extends React.Component {
                             <Button label="Contact Me" size="large" className="font-bold pb-3 pl-5 pr-5 pt-3"
                                 onClick={(() => this.props.toggleDialog(true))}/>
                         </div>
-                        <div className="col-5">
-                            <div className="flex justify-content-evenly pr-6">
+                        <div className="col md:col-5">
+                            <div className="flex justify-content-evenly md:pr-6">
                                 <div className="mt-6">
                                     <div className="mb-6 fadeinleft animation-duration-500 animation-ease-in-out">
                                         <div style={{color : "#e78733"}} className="text-7xl">25+</div>
