@@ -40,3 +40,17 @@
 .underline-highlight-green{
   border-bottom: 0.2rem solid #00800094
 }
+
+/* Custom Style */
+.service-subheading{
+  width: 50rem;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+
+  .service-subheading{
+    width: fit-content;
+  }
+  
+}

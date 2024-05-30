@@ -13,7 +13,7 @@ export default class About extends React.Component {
     render() {
 
         return (
-            <div id="about" className="container-about mt-6 mb-6">
+            <div id="about" className="container-about mt-6 md:mb-6 mb-4">
                 <div className="grid">
                     <div className="col md:col-5 md:col-offset-1 md:mt-6 md:pl-8 md:pr-8 mt-4 pl-5 pr-5" style={{ height: "32rem" }}>
                         <div className="container border-round-3xl h-30rem">

@@ -37,27 +37,27 @@ export default class Services extends React.Component {
 
     render() {
         return (
-            <div id="services" className="container-services pb-8 pt-8">
-                <div className="font-bold text-5xl text-center" style={{ color: "#00ca5a" }}>What I love</div>
-                <div className="font-normal m-auto mt-4 text-700 text-center text-xl line-height-3" style={{width : "50rem"}}>
+            <div id="services" className="container-services pb-6 md:pb-8 md:pt-8">
+                <div className="font-bold text-2xl md:text-5xl text-center" style={{ color: "#00ca5a" }}>What I love</div>
+                <div className="font-normal m-auto mt-4 text-700 text-center md:text-xl line-height-3 service-subheading pl-4 pr-4 md:pl-0 md:pr-0">
                     For me, each project is unique. This is why I place value on well conceived planet that is understandable to all and clear.
                 </div>
 
-                <div className="flex flex-wrap gap-5 justify-content-evenly mt-6 pl-8 pr-8">
+                <div className="flex flex-wrap gap-5 justify-content-evenly mt-5 md:mt-6 pl-2 md:pl-8 pr-2 md:pr-8">
                     {this.state.techImages?.map((image, index) => {
                         const match = image.match(/\/media\/([^\.]+)/);
                         return (
                             
-                            <div className="mt-3 w-25rem" key={"service-body-"+index}>
-                                <img className="h-11rem"
+                            <div className="md:mt-3 md:w-25rem w-10rem" key={"service-body-"+index}>
+                                <img className="h-4rem md:h-11rem"
                                     key={"service-image-"+index} src={image} alt="info"
                                     title={match ? match[1] : null}
                                     loading="lazy" />
-                                <div key={"service-heading-"+index} className="align-content-evenly capitalize font-bold h-3rem m-auto mt-3 text-2xl w-16rem" style={{
+                                <div key={"service-heading-"+index} className="align-content-evenly capitalize font-bold h-3rem m-auto md:mt-3 text-xs md:text-2xl md:w-16rem" style={{
                                     letterSpacing: "0.1rem",
                                     color: "#00ca5a"
                                 }}>{match ? match[1]?.replaceAll("-", " ") : null}</div>
-                                <div key={"service-desc-"+index} className="line-height-3 m-auto mt-5 text-600 text-center w-18rem" style={{fontSize : "medium"}}>
+                                <div key={"service-desc-"+index} className="line-height-3 m-auto md:mt-5 text-600 text-center md:w-18rem text-xs md:text-base">
                                 {this.getServiceDescription(match ? match[1]?.replaceAll("-", " ") : null)}
                                 </div>
                             </div>
