@@ -2,27 +2,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #ff00cc; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-        to right,
-        #333399,
-        #ff00cc
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-        to right,
-        #333399,
-        #ff00cc
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ff00cc;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,
+            #333399,
+            #ff00cc);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,
+            #333399,
+            #ff00cc);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
 .glass-card {
     background: white;
-    background: linear-gradient(
-        to right bottom,
-        rgba(255, 255, 255, 0.4),
-        rgba(255, 255, 255, 0.2)
-    );
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.2));
     backdrop-filter: blur(1rem);
     width: 60%;
     height: 60%;
@@ -37,11 +34,9 @@
 .circle1,
 .circle2 {
     background: white;
-    background: linear-gradient(
-        to right bottom,
-        rgba(255, 255, 255, 0.9),
-        rgba(255, 255, 255, 0.1)
-    );
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.9),
+            rgba(255, 255, 255, 0.1));
     height: 12rem;
     width: 12rem;
     position: relative;
@@ -58,4 +53,26 @@
     top: -44%;
     left: 86%;
     transform: translate(-50%, -50%);
+}
+
+.about-me-content{
+    letter-spacing: 0.05rem;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+
+    .circle1,
+    .circle2 {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .circle2 {
+        top: -36%;
+    }
+
+    .about-me-content{
+        letter-spacing: 0.014rem;
+    }
 }
