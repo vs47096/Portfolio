@@ -12,7 +12,7 @@ export default class Project extends React.Component {
                 key={"project-" + index}
                 header={
                     <img
-                        className="md:h-14rem md:w-full"
+                        className="md:h-14rem md:w-full h-6rem"
                         src={require(`../assets/project/${project.image}`)} alt="Project Images"
                         loading="lazy" />
                 }
@@ -25,7 +25,7 @@ export default class Project extends React.Component {
                     <div className="capitalize font-bold md:text-2xl text-xl">
                         {project.name}
                     </div>
-                    <p className="text-600 md:h-4rem h-6rem w-fit">
+                    <p className="text-600 md:h-4rem h-9rem w-fit">
                         {project.description}
                     </p>
                     {
