@@ -32,23 +32,24 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Dialog visible={this.state.visible} style={{ width: '30vw' }} onHide={() => this.toggleDialog(false)}>
+        <Dialog visible={this.state.visible} onHide={() => this.toggleDialog(false)}
+          className='md:w-26rem w-20rem'>
           <div>
             <div className='text-center'>
               <img
                 src={avatar}
                 alt="logo"
                 loading="lazy"
-                className="h-14rem"
+                className="h-10rem md:h-14rem"
               />
             </div>
           </div>
           <div>
-          <div className="font-bold text-700"><p className="text-2xl text-center"><span className="underline-highlight-green">Vinamra Shrey</span></p></div>
+          <div className="font-bold text-700"><p className="md:text-2xl text-center"><span className="underline-highlight-green">Vinamra Shrey</span></p></div>
           <div>
-            <div className='grid'>
-              <div className='col-2 col-offset-1 pl-2'><img src={gmail} alt="logo" loading="lazy" className="h-2rem"/></div>
-              <div className='col-9 font-medium text-xl text-700  align-content-center'>vs47096.affiliate@gmail.com</div>
+            <div className='grid md:mt-0 mt-4'>
+              <div className='col-2 md:col-2 md:col-offset-1 md:mt-0 md:pl-2 md:text-left mt-1 text-center'><img src={gmail} alt="logo" loading="lazy" className="h-1rem md:h-2rem"/></div>
+              <div className='align-content-center col-10 font-medium md:col-9 md:text-xl text-700'>vs47096.affiliate@gmail.com</div>
             </div>
             {/* <div className='grid mt-3'>
             <div className='col-3 col-offset-1 pl-5'><img src={wp} alt="logo" loading="lazy" className="h-3rem"/></div>
