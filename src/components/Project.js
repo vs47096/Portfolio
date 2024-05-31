@@ -3,6 +3,8 @@ import { projects } from "../utility/utility";
 import { Card } from 'primereact/card';
 import { Carousel } from 'primereact/carousel';
 import { Button } from 'primereact/button';
+import { Carousel as MobileCarousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default class Project extends React.Component {
 
@@ -17,7 +19,7 @@ export default class Project extends React.Component {
                         loading="lazy" />
                 }
                 className="border-1 surface-border border-round m-2"
-                >
+            >
                 <div className="flex flex-column gap-2 md:pl-2 md:pr-2 text-left">
                     <div className="font-medium text-600 md:text-xl text-sm">
                         {project.type}
@@ -29,14 +31,14 @@ export default class Project extends React.Component {
                         {project.description}
                     </p>
                     {
-                        project.link ? 
-                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="font-bold p-button md:pb-3 md:pt-3 w-fit md:mt-1"
-                        style={{ textDecoration: "none" }}>
-                        Explore more
-                    </a>:
-                    <Button label="No preview available" disabled severity="secondary" className="font-bold md:pb-3 md:pt-3 w-fit md:mt-1"/>
+                        project.link ?
+                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="font-bold p-button md:pb-3 md:pt-3 w-fit md:mt-1"
+                                style={{ textDecoration: "none" }}>
+                                Explore more
+                            </a> :
+                            <Button label="No preview available" disabled severity="secondary" className="font-bold md:pb-3 md:pt-3 w-fit md:mt-1" />
                     }
-                    
+
                 </div>
             </Card>
         );
@@ -73,7 +75,7 @@ export default class Project extends React.Component {
 
 
         return (
-            <div  id="projects" className="" style={containerStyle}>
+            <div id="projects" className="" style={containerStyle}>
                 <div className="flex flex-column h-full justify-content-evenly md:pl-8 md:pr-8 md:pt-8 mt-4">
                     <div className="font-bold md:text-5xl text-2xl text-left px-3 md:px-0" style={{ color: "#00ca5a" }}>Projects</div>
                     <div className="font-medium text-600 md:text-xl text-left px-3 md:px-0">
@@ -81,10 +83,62 @@ export default class Project extends React.Component {
                             style={{ letterSpacing: "0.04rem" }}>
                             Here are some projects I have worked on, alongside various enterprise and personal endeavours. They are mostly hosted on my home server to keep costs low.</p>
                     </div>
+                    {/* Desktop Carousel - START */}
                     <Carousel value={projects} numVisible={3} numScroll={1} responsiveOptions={responsiveOptions}
-                        className="custom-carousel md:mt-2"
+                        className="custom-carousel mt-2 hidden md:block"
                         circular
                         itemTemplate={this.projectTemplate} />
+                    {/* Desktop Carousel - END */}
+                    {/* Mobile Carousel - START */}
+                    <MobileCarousel
+                        showArrows={true}
+                        autoPlay
+                        centerMode
+                        infiniteLoop
+                        showStatus={false}
+                        showIndicators={false}
+                        className="mt-3 block md:hidden"
+                        showThumbs={false}>
+                        {
+                            projects.map((project, index) => {
+                                return (
+                                    <Card
+                                        key={"project-" + index}
+                                        header={
+                                            <img
+                                                className="h-14rem w-full"
+                                                src={require(`../assets/project/${project.image}`)} alt="Project Images"
+                                                loading="lazy" />
+                                        }
+                                        className="border-1 surface-border border-round mx-2"
+                                    >
+                                        <div className="flex flex-column gap-1 text-left">
+                                            <div className="font-medium text-600 md:text-xl text-xs">
+                                                {project.type}
+                                            </div>
+                                            <div className="capitalize font-bold md:text-2xl text-sm">
+                                                {project.name}
+                                            </div>
+                                            <p className="text-600 h-6rem w-fit text-sm">
+                                                {project.description}
+                                            </p>
+                                            {
+                                                project.link ?
+                                                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="font-bold p-button md:pb-3 md:pt-3 w-fit md:mt-1 text-sm"
+                                                        style={{ textDecoration: "none" }}>
+                                                        Explore more
+                                                    </a> :
+                                                    <Button label="No preview available" disabled severity="secondary" className="font-bold md:pb-3 md:pt-3 w-fit md:mt-1 text-sm" />
+                                            }
+
+                                        </div>
+                                    </Card>
+                                );
+                            })
+                        }
+
+                    </MobileCarousel>
+                    {/* Mobile Carousel - END */}
                 </div>
             </div>
         );
