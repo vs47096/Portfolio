@@ -4,12 +4,13 @@ import LazyLoad from 'react-lazyload';
 import background from '../assets/background.jpg';
 import logoDark from '../assets/logo-for-dark.png';
 import { Link } from "react-router-dom";
+import moment from "moment";
 
 export default class Header extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isImageLoaded: false
+            isImageLoaded: false,
         };
     }
 
@@ -38,6 +39,8 @@ export default class Header extends React.Component {
             zIndex: 2, // Ensure the content is above the background image
             // color: '#fff', // Text color
         };
+
+        const yearsExperience = moment().diff(moment('2018-09-24'), 'years');
 
         return (
             <div className="container-header h-30rem md:h-screen" style={containerStyle}>
@@ -108,7 +111,7 @@ export default class Header extends React.Component {
                                 </div>
                                 <div className="">
                                     <div className="mb-6 fadeinright animation-duration-500 animation-ease-in-out">
-                                    <div style={{color : "#1479cc"}} className="text-7xl">5+</div>
+                                    <div style={{color : "#1479cc"}} className="text-7xl">{yearsExperience}+</div>
                                         <div className="font-bold text-1xl text-400">Years Experience</div>
                                     </div>
                                     <div className="fadeinright animation-duration-500 animation-ease-in-out">
