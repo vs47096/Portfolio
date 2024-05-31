@@ -12,30 +12,29 @@ export default class Project extends React.Component {
                 key={"project-" + index}
                 header={
                     <img
-                        className="h-8rem md:h-14rem w-12rem md:w-20rem border-round-top-md"
+                        className="md:h-14rem md:w-full"
                         src={require(`../assets/project/${project.image}`)} alt="Project Images"
                         loading="lazy" />
                 }
-                className="md:w-fit md:shadow-5 border-round-bottom-md md:mb-6 md:ml-2 md:mt-4 mt-2"
-                //style={{ height: "33rem" }}
+                className="border-1 surface-border border-round m-2"
                 >
                 <div className="flex flex-column gap-2 md:pl-2 md:pr-2 text-left">
                     <div className="font-medium text-600 md:text-xl text-sm">
                         {project.type}
                     </div>
-                    <div className="capitalize font-bold md:text-3xl text-xl">
+                    <div className="capitalize font-bold md:text-2xl text-xl">
                         {project.name}
                     </div>
-                    <p className="text-600 md:h-4rem md:w-20rem">
+                    <p className="text-600 md:h-4rem h-6rem w-fit">
                         {project.description}
                     </p>
                     {
                         project.link ? 
-                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="font-bold p-button md:pb-3 md:pt-3 w-fit"
+                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="font-bold p-button md:pb-3 md:pt-3 w-fit md:mt-1"
                         style={{ textDecoration: "none" }}>
                         Explore more
                     </a>:
-                    <Button label="No preview available" disabled severity="secondary" className="font-bold md:pb-3 md:pt-3 w-fit"/>
+                    <Button label="No preview available" disabled severity="secondary" className="font-bold md:pb-3 md:pt-3 w-fit md:mt-1"/>
                     }
                     
                 </div>
@@ -81,14 +80,14 @@ export default class Project extends React.Component {
         return (
             <div  id="projects" className="" style={containerStyle}>
                 <div className="flex flex-column h-full justify-content-evenly md:pl-8 md:pr-8 md:pt-8 mt-4">
-                    <div className="font-bold md:text-5xl text-2xl text-left" style={{ color: "#00ca5a" }}>Projects</div>
-                    <div className="font-medium text-600 md:text-xl text-left">
+                    <div className="font-bold md:text-5xl text-2xl text-left px-3 md:px-0" style={{ color: "#00ca5a" }}>Projects</div>
+                    <div className="font-medium text-600 md:text-xl text-left px-3 md:px-0">
                         <p className="line-height-3 text-justify"
                             style={{ letterSpacing: "0.04rem" }}>
                             Here are some projects I have worked on, alongside various enterprise and personal endeavours. They are mostly hosted on my home server to keep costs low.</p>
                     </div>
-                    <Carousel value={projects} numVisible={3} numScroll={3} responsiveOptions={responsiveOptions}
-                        className="custom-carousel md:mt-3 md:mt-1"
+                    <Carousel value={projects} numVisible={3} numScroll={1} responsiveOptions={responsiveOptions}
+                        className="custom-carousel md:mt-2"
                         circular
                         itemTemplate={this.projectTemplate} />
                 </div>

@@ -5,7 +5,7 @@ export default class Contact extends React.Component {
 
     render() {
         return (
-            <div className="align-content-center h-20rem md:h-25rem">
+            <div className="align-content-center h-20rem md:h-25rem mt-3 md:mt-0">
                 <div className="align-items-center flex flex-column gap-5">
                     <div className="font-bold md:text-5xl text-2xl text-800 text-center">Let`s work together !</div>
                     <div className="line-height-3 text-700 text-center text-xl"
