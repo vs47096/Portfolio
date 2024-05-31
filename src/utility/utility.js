@@ -16,7 +16,7 @@ export const projects = [{
     "attribution" : <a href="https://www.freepik.com/free-vector/mobile-expense-management-abstract-illustration_20769989.htm#fromView=search&page=1&position=0&uuid=966b3db3-f37a-4213-a8dd-eac36dbb3677">Image by vectorjuice on Freepik</a>,
     "type" : "Web App",
     "name" : "Batwa Tracker",
-    "description" : "Provide bank statement, get an expense report with ability to control transaction categorization. (Password : 12345)",
+    "description" : "Provide bank statement, get an expense report with ability to control transaction categorization.",
     "link" : "http://home41server.ddns.net:9080"
 },
 {
