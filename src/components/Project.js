@@ -53,15 +53,10 @@ export default class Project extends React.Component {
             {
                 breakpoint: '1199px',
                 numVisible: 3,
-                numScroll: 1
+                numScroll: 1,
             },
             {
-                breakpoint: '767px',
-                numVisible: 2,
-                numScroll: 1
-            },
-            {
-                breakpoint: '575px',
+                breakpoint: '600px',
                 numVisible: 1,
                 numScroll: 1
             }
