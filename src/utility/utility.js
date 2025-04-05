@@ -17,7 +17,7 @@ export const projects = [{
     "type" : "Web App",
     "name" : "Batwa Tracker",
     "description" : "Provide bank statement, get an expense report with ability to control transaction categorization.",
-    "link" : "http://home41server.ddns.net:9080"
+    "link" : "http://home41server.ddns.net:8087"
 },
 {
     "image" : "mlcpro.svg",
@@ -25,7 +25,7 @@ export const projects = [{
     "type" : "Web App",
     "name" : "J Pro",
     "description" : "Manage sale & purchase, add invoices with inventory track and related transactions.",
-    "link" : "http://home41server.ddns.net:8000/home"
+    "link" : "http://home41server.ddns.net:8088/home"
 },
 {
     "image" : "portfolio.svg",
@@ -33,7 +33,7 @@ export const projects = [{
     "type" : "Web App",
     "name" : "My portfolio",
     "description" : "Portfolio devloped using react, deployed on github.io",
-    "link" : "https://vs47096.github.io/Portfolio/"
+    "link" : "https://vs47096.github.io"
 },
 {
     "image" : "jira.svg",

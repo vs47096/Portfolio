@@ -1,0 +1,37 @@
+name: Build and Deploy React App to GitHub Pages
+
+on:
+  push:
+    branches:
+      - release # Trigger workflow on pushes to the release branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'latest' # Or specify your desired Node.js version
+
+      - name: Configure git profile
+        run: |
+          git config --global user.email "vs47096@gmail.com"
+          git config --global user.name "Vinamra Shrey"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build React App
+        run: npm run build # Changed from predeploy to build
+
+      - name: Deploy to GitHub Pages
+        run: |
+          git remote set-url origin https://git:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          npm run deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
