@@ -32,7 +32,7 @@ export const projects = [{
     "attribution" : <a href="https://www.freepik.com/free-vector/social-biography-concept-illustration_17870829.htm#fromView=search&page=1&position=2&uuid=35458c51-b255-4379-a5a9-abf91727d430">Image by storyset on Freepik</a>,
     "type" : "Web App",
     "name" : "My portfolio",
-    "description" : "Portfolio devloped using react, deployed on github.io",
+    "description" : "My portfolio devloped using react, and deployed on github pages built using github actions",
     "link" : "https://vs47096.github.io"
 },
 {
@@ -40,7 +40,7 @@ export const projects = [{
     "attribution" : <a href="https://www.freepik.com/free-vector/gradient-npl-illustration_22112075.htm#fromView=search&page=1&position=16&uuid=ec441274-50e4-4bdf-8148-c16388f6c5bb">Image by freepik</a>,
     "type" : "Batch Job",
     "name" : "Jira Automation",
-    "description" : "Batch job running to close sprint, create spring and default stories on a jira board",
+    "description" : "UI in react and backend in spring boot for configruing batch job running to create & close sprint, anc create default stories leveraging Atlassian Jira APIs",
     "link" : null
 },
 {
