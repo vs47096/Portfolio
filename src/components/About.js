@@ -6,10 +6,6 @@ import { Button } from 'primereact/button';
 
 export default class About extends React.Component {
 
-    constructor(props){
-        super(props);
-    }
-
     render() {
 
         return (

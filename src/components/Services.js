@@ -45,7 +45,7 @@ export default class Services extends React.Component {
 
                 <div className="flex flex-wrap gap-5 justify-content-evenly mt-5 md:mt-6 pl-2 md:pl-8 pr-2 md:pr-8">
                     {this.state.techImages?.map((image, index) => {
-                        const match = image.match(/\/media\/([^\.]+)/);
+                        const match = image.match(/\/media\/([^\.]+)/); // eslint-disable-line no-useless-escape
                         return (
                             
                             <div className="md:mt-3 md:w-25rem w-10rem" key={"service-body-"+index}>
