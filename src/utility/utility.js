@@ -17,7 +17,7 @@ export const projects = [{
     "type" : "Web App",
     "name" : "Batwa Tracker",
     "description" : "Provide bank statement, get an expense report with ability to control transaction categorization.",
-    "link" : "http://home41server.ddns.net:8087"
+    "link" : "http://home41server.ddns.net:8086"
 },
 {
     "image" : "mlcpro.svg",
