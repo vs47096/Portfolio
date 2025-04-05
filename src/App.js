@@ -14,7 +14,6 @@ import { Dialog } from 'primereact/dialog';
 import avatar from './assets/avatar.png';
 import React from 'react';
 import gmail from './assets/contact/gmail.png';
-import wp from './assets/contact/wp.png';
 
 export default class App extends React.Component {
 

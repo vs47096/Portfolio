@@ -3,7 +3,6 @@ import { Button } from 'primereact/button';
 import LazyLoad from 'react-lazyload';
 import background from '../assets/background.jpg';
 import logoDark from '../assets/logo-for-dark.png';
-import { Link } from "react-router-dom";
 import moment from "moment";
 
 export default class Header extends React.Component {
@@ -87,9 +86,9 @@ export default class Header extends React.Component {
                                 <div className="mb-2 text-6xl text-color-secondary">Great Ideas Doesn't</div>
                                 <div className="font-semibold text-100 text-7xl">Need Approvals, They</div>
                                 <div className="font-semibold text-100 text-7xl">Need <span style={{
-                                    background: '#11998e',  /* fallback for old browsers */
-                                    background: '-webkit-linear-gradient(to right, #38ef7d, #11998e)',  /* Chrome 10-25, Safari 5.1-6 */
-                                    background: 'linear-gradient(to right, #38ef7d, #11998e)', /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                                    background: '#11998e',  /* fallback for old browsers */ // eslint-disable-line no-dupe-keys
+                                    background: '-webkit-linear-gradient(to right, #38ef7d, #11998e)',  /* Chrome 10-25, Safari 5.1-6 */ // eslint-disable-line no-dupe-keys
+                                    background: 'linear-gradient(to right, #38ef7d, #11998e)', /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ // eslint-disable-line no-dupe-keys
                                     WebkitBackgroundClip: 'text',
                                     WebkitTextFillColor: 'transparent'
                                 }}>Applications.</span></div>
