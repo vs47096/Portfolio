@@ -24,7 +24,7 @@ export default class Skills extends React.Component {
                 <div className="font-bold md:text-5xl text-2xl text-center" style={{ color: "#00ca5a" }}>Technologies used</div>
                 <div className="flex flex-wrap gap-4 justify-content-evenly md:gap-5 md:mt-6 md:pl-8 md:pr-8 mt-6 pl-3 pr-3">
                     {this.state.techImages?.map((image, index) => {
-                        const match = image.match(/\/media\/([^\.]+)/);
+                        const match = image.match(/\/media\/([^\.]+)/); // eslint-disable-line no-useless-escape
                         return (
                             <div key={"skill-body-"+index} className="fadeinleft animation-duration-500 animation-ease-in-out">
                                 <img className="h-3rem md:h-5rem"
